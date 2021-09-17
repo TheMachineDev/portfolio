@@ -1,0 +1,101 @@
+/* Main css file */
+
+/* base styles */
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.background-text-wrapper{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.background-text{
+  font-size: 40vw;
+  line-height: 38vw;
+  margin-right: 24vw;
+  margin-top: 3vw;
+  color: #f5f5f5;
+}
+
+.square-wrapper{
+  position: absolute;
+  display: flex;
+  width: 45vw;
+  margin-left: -3vw;
+}
+
+.square-wrapper > .square{
+  width: 5vw;
+  height: 3vw;
+  background-color: #fcfcfc;
+}
+
+.background{
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bar{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.bar div{
+  width: 11vw;
+  height: 1vw;
+  border-radius: 100px;
+  margin-right: -1vw;
+
+}
+
+.blue{
+  background-color: #0077FF;
+}
+
+.orange{
+  background-color: #FFAA00;
+  z-index: 1;
+}
+
+.title{
+  line-height: 1em;
+  font-size: 12vw;
+}
+
+.line2{
+  text-indent: 1em;
+}
+
+
+/* media for fixing size when screen ratio changes */
+@media (max-aspect-ratio: 11/9) {
+  .background-text{
+    margin-top: 0;
+  }
+  .background-text{
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .background-text-wrapper{
+    align-items: center;
+  }
+}
