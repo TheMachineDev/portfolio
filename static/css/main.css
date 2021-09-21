@@ -45,6 +45,20 @@ a{
   color: var(--primary-font-color);
 }
 
+/* footer */
+.footer-section{
+  height: 300px !important;
+  background-color: var(--main-bg-accent-color);
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.footer-section p{
+  margin: auto;
+  max-width: 600px;
+  color: var(--primary-font-color)
+}
+
 /* main button */
 .btn{
   padding:15px 45px 15px;

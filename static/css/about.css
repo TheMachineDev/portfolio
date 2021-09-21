@@ -1,0 +1,88 @@
+@import url('variables.css');
+
+body{
+  background: var(--primary-font-color);
+}
+
+/* section 1 */
+
+.primary-about{
+  background-color: var(--main-bg-color);
+  gap: 50px;
+}
+
+.about-desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section 2 */
+
+.midle-about{
+  height: auto;
+  color: black;
+  flex-direction: column;
+}
+
+.about-me-wrapper{
+  display: flex;
+}
+
+.left-about-me, .right-about-me{
+  flex: 1 1 0;
+}
+
+.left-about-me h1, .about-hobby-title{
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 2.5em;
+}
+
+.right-about-me p{
+  margin-top: 300px;
+}
+
+.about-me{
+  margin-bottom: 100px;
+}
+
+.about-hobby-title{
+  margin-bottom: 100px;
+  font-weight: 700;
+}
+
+.hobby-cards-wrapper{
+  display: flex;
+  gap:75px;
+}
+
+.hobby-card{
+  flex: 1 1 0;
+  font-size: .8em;
+}
+
+.hobby-card p{
+  font-weight: 100;
+}
+
+.about-hobby{
+  margin-bottom: 200px;
+}
+
+/* section 3 */
+
+.to-be-added{
+  background-color: var(--main-bg-color);
+  height: 1300px;
+  font-weight: 500;
+}
+
+.to-be-added h1{
+  max-width: 1000px;
+  font-size: 5em;
+  margin:auto !important;
+  text-align: center;
+  line-height: 1em;
+  font-weight: 500;
+}

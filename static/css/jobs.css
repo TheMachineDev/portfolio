@@ -89,17 +89,6 @@ body{
   max-width: 1000px;
 }
 
-/* footer */
-.footer-section{
-  height: 300px;
-  background-color: var(--main-bg-accent-color);
-  font-size: 1.5em;
-  text-align: center;
-}
 
-.footer-section p{
-  margin: auto;
-  max-width: 600px;
-}
 
 
