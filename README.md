@@ -27,4 +27,4 @@ portfólio
 
 - Video do youtube: **[Clique Aqui](https://www.youtube.com/)**
 
-- Acesso ao website: **bit.ly/tm_portfolio**
+- Acesso ao website: **https://bit.ly/tm_portfolio**
