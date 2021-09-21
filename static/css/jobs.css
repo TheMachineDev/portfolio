@@ -1,0 +1,105 @@
+@import url('variables.css');
+
+/* base styles */
+
+body{
+  background-color: var(--primary-font-color);
+}
+
+/* section */
+
+.section{
+  width: 100%;
+  display: flex;
+}
+
+/* section 1 */
+
+.intro-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.job-intro-section{
+  height: 500px;
+  background-color: var(--main-bg-color);
+}
+
+.title p{
+  font-size: 2em;
+}
+
+/* section 2 */
+
+.project-img{
+  height: 1300px;
+  background-color: var(--primary-color);
+}
+
+.project-img h1, .to-be-added h1{
+  font-size: 5em;
+  margin:auto !important;
+  text-align: center;
+  line-height: 1em;
+}
+
+/* section 3 */
+.section-prod{
+  color: black;
+  height: 1080px;
+}
+
+.wrapper-prod{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.wrapper-prod h1{
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 75px;
+}
+
+.wrapper-prod h2{
+  line-height: 1em;
+}
+
+.wrapper-prod p{
+  margin-bottom: 30px;
+}
+
+.prod-right{
+  flex: 1.2 1 0;
+}
+
+.prod-left{
+  flex: 1 1 0;
+}
+
+/* section 4 */
+
+.to-be-added{
+  background-color: var(--main-bg-color);
+  height: 1300px;
+  font-weight: 500;
+}
+
+.to-be-added h1{
+  max-width: 1000px;
+}
+
+/* footer */
+.footer-section{
+  height: 300px;
+  background-color: var(--main-bg-accent-color);
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.footer-section p{
+  margin: auto;
+  max-width: 600px;
+}
+
+
