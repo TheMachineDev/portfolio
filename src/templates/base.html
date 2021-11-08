@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  {% block head %}
+  {% endblock %}
+
+  <title>{% block title %}Base{% endblock %}</title>
+</head>
+
+<body>
+  <div class="background-wrapper">
+  </div>
+
+  <div class="header">
+    <a href="{{ url_for('index') }}">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.601 57">
+          <g id="Logo" transform="translate(0.101)">
+            <path id="Path_6" data-name="Path 6" d="M-5,0H26.6" transform="translate(7.399 54.5)" fill="none"
+              stroke="#07f" stroke-linecap="round" stroke-width="5" />
+            <line id="Line_2" data-name="Line 2" x2="33" transform="translate(44 54.5)" fill="none" stroke="#fa0"
+              stroke-linecap="round" stroke-width="5" />
+            <text id="TM" transform="translate(0 47)" fill="#f5f5f5" font-size="50" font-family="Gotham-Black, Gotham"
+              font-weight="800">
+              <tspan x="0" y="0">TM</tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+    </a>
+    <div class="navbar menu-items">
+      <a href="{{ url_for('about') }}">
+        <p class="menu-item">SOBRE</p>
+      </a>
+      <a href="{{ url_for('job') }}">
+        <p class="menu-item">TRABALHOS</p>
+      </a>
+      <a href="{{ url_for('curriculum') }}">
+        <p class="menu-item">CURRÍCULO</p>
+      </a>
+    </div>
+  </div>
+
+  <main class="main">
+    {% block main %}
+    {% endblock %}
+  </main>
+
+  {% block footer %}
+  <footer class="section footer-section">
+    <p>tm.dev.io@gmail.com e outras informações pertinentes ao contado</p>
+  </footer>
+  {% endblock %}
+</body>
+{% block javascript %}
+{% endblock %}
+
+</html>

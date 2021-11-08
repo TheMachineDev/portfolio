@@ -1,84 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../static/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="../static/css/jobs.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Jobs</title>
-</head>
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/job.css') }}" />
+{% endblock %}
 
-<body>
-  <div class="navbar">
-    <a href="index.html">
-      <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.601 57">
-          <g id="Logo" transform="translate(0.101)">
-            <path id="Path_6" data-name="Path 6" d="M-5,0H26.6" transform="translate(7.399 54.5)" fill="none"
-              stroke="#07f" stroke-linecap="round" stroke-width="5" />
-            <line id="Line_2" data-name="Line 2" x2="33" transform="translate(44 54.5)" fill="none" stroke="#fa0"
-              stroke-linecap="round" stroke-width="5" />
-            <text id="TM" transform="translate(0 47)" fill="#f5f5f5" font-size="50" font-family="Gotham-Black, Gotham"
-              font-weight="800">
-              <tspan x="0" y="0">TM</tspan>
-            </text>
-          </g>
-        </svg>
-      </div>
-    </a>
-    <div class="menu-items">
-      <a href="about.html">
-        <p class="menu-item">SOBRE</p>
-      </a>
-      <a href="job.html">
-        <p class="menu-item">TRABALHOS</p>
-      </a>
-      <a href="curriculum.html">
-        <p class="menu-item">CURRÍCULO</p>
-      </a>
+{% block title %}Curriculum{% endblock %}
+
+{% block main %}
+<section class="section job-intro-section">
+  <div class="section-wrapper intro-wrapper">
+    <div class="title">
+      <h1>NOME DO PROJETO</h1>
+      <p>Subtítulo do projeto</p>
     </div>
   </div>
+</section>
+<section class="section project-img">
+  <h1>IMAGEM DO PROJETO</h1>
+</section>
 
-
-  <section class="section job-intro-section">
-    <div class="section-wrapper intro-wrapper">
-      <div class="title">
-        <h1>NOME DO PROJETO</h1>
-        <p>Subtítulo do projeto</p>
-      </div>
+<section class="section section-prod">
+  <div class="section-wrapper wrapper-prod">
+    <div class="prod-right">
+      <h1>Visão geral</h1>
+      <p>Descrição geral sobre o projeto, o que ele faz, por que foi feito, seu objetivo, etc e o que eu fiz nesse
+        projeto.</p>
     </div>
-  </section>
-  <section class="section project-img">
-    <h1>IMAGEM DO PROJETO</h1>
-  </section>
-
-  <section class="section section-prod">
-    <div class="section-wrapper wrapper-prod">
-      <div class="prod-right">
-        <h1>Visão geral</h1>
-        <p>Descrição geral sobre o projeto, o que ele faz, por que foi feito, seu objetivo, etc e o que eu fiz nesse
-          projeto.</p>
-      </div>
-      <div class="prod-left">
-        <h2>CLIENTE</h2>
-        <p>Nome do cliente</p>
-        <h2>SERVIÇOS PROVIDOS</h2>
-        <p>Ex:Desenvolvimento Front-End Design UI e UX</p>
-      </div>
+    <div class="prod-left">
+      <h2>CLIENTE</h2>
+      <p>Nome do cliente</p>
+      <h2>SERVIÇOS PROVIDOS</h2>
+      <p>Ex:Desenvolvimento Front-End Design UI e UX</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section to-be-added">
-    <h1>Provavel detalhamento do projeto e adição de outras imagens</h1>
-  </section>
-
-  <footer class="section footer-section">
-    <p>tm.dev.io@gmail.com e outras informações pertinentes ao contado</p>
-  </footer>
-</body>
-
-</html>
+<section class="section to-be-added">
+  <h1>Provavel detalhamento do projeto e adição de outras imagens</h1>
+</section>
+{% endblock %}
