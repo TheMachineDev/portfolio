@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from livereload import Server
 
 # Instanciando app
 app = Flask(__name__)
@@ -29,4 +30,5 @@ def curriculum():
 
 # Rodando o app
 if __name__ == '__main__':
-    app.run(debug=True)
+    server = Server(app.wsgi_app)
+    server.serve()

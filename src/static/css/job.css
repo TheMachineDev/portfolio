@@ -1,9 +1,8 @@
-@import url('variables.css');
 
 /* base styles */
 
 body{
-  background-color: var(--primary-font-color);
+  background-color: var(--primary-color);
 }
 
 /* section */

@@ -3,118 +3,98 @@
 {% block title %}Home{% endblock %}
 
 {% block main %}
-<section class="section section-1">
-  <div class="section-wrapper wrapper1">
-    <div class="subtitle">
-      <p>Olá, sou <b> Gustavo Molina</p>
-    </div>
-    <div class="title">
-      <h1 class="role">DESENVOLVEDOR <br> FULLSTACK</h1>
-    </div>
-    <button class="btn btn-style-1">Vamos falar</button>
-    <div class="btn-desc">
+<section class="main-section">
+  <div class="container">
+    <p class="main-subtitle">Olá, sou <b> Gustavo Molina </p>
+    <h1 class="section-title main-title">Desenvolvedor Fullstack</h1>
+    <button class="btn btn-custom">Vamos falar</button>
+    <!--<div class="btn-desc">
       <span class="material-icons">
         arrow_upward
       </span>
       <p>(levará o cliente a um form
         de fale conosco)</p>
+    </div>-->
+    <div class="social">
+      <i class="fab fa-dribbble icon"></i>
+      <i class="fab fa-linkedin icon"></i>
+      <i class="fab fa-github icon"></i>
     </div>
   </div>
 </section>
 
-<section class="section section-2">
-  <div class="section-wrapper wrapper2">
-    <div class="photo-wrapper">
-      <span class="material-icons">
-        account_circle
-      </span>
-      <h2>FOTO DE PERFIL</h2>
-      <p>foto que terá efeitos de filtro e redimensionamento</p>
+<section class="about-section">
+  <div class="section-bg"></div>
+  <div class="container">
+    <div class="photo-container">
+      <i class="fas fa-user-circle text-center icon"></i>
+      <h3 class="text-center">FOTO DE PERFIL</h3>
+      <p class="text-center">foto que terá efeitos de filtro e redimensionamento</p>
     </div>
-    <div class="about">
-      <h1 class="section-title about-title">SOBRE MIM</h1>
-      <p class="about-content">Aqui conterá uma breve introdução sobre mim e sobre meus hobbies</p>
-      <a href="about.html"><button class="btn btn-style-1">Ver mais sobre</button></a>
-    </div>
+    <p class="section-label">sobre mim</p>
+    <h2 class="section-title">Amo criar interfaces bonitas</h1>
+      <p class="section-paragraph">Aqui conterá uma breve introdução sobre mim e sobre meus hobbies</p>
+      <a href="{{ url_for('about')}}"><button class="btn">Ver mais sobre</button></a>
   </div>
 </section>
 
-<section class="section section-3">
-  <div class="section-wrapper wrapper3">
-    <h1 class="section-title job-title">VEJA MEU TRABALHO</h1>
-    <p class="section-3-desc">Aqui terá uma breve descrição sobre os projetos que já fiz (ou terminarei, como o API
+<section class="job-section job__one">
+  <div class="container">
+    <p class="section-label">portfolio</p>
+    <h2 class="section-title">Fatec SJC App</h2>
+    <p class="section-paragraph">Aqui terá uma breve descrição sobre os projetos que já fiz (ou terminarei, como o API
       desse Semestre)</p>
-    <div class="jobs-wrapper">
-      <a class="jobs-link" href="job.html">
-        <div class="job job-small">
-          <h2>Imagem do projeto</h2>
-          <span class="material-icons">arrow_right_alt</span>
-          <p>clicar na imagem leva a página do projeto</p>
-        </div>
-      </a>
-      <a class="jobs-link" href="job.html">
-        <div class="job">
-          <h2>Imagem do projeto</h2>
-          <span class="material-icons">arrow_right_alt</span>
-          <p>clicar na imagem leva a página do projeto</p>
-        </div>
-      </a>
-      <a class="jobs-link" href="job.html">
-        <div class="job">
-          <h2>Imagem do projeto</h2>
-          <span class="material-icons">arrow_right_alt</span>
-          <p>clicar na imagem leva a página do projeto</p>
-        </div>
-      </a>
-    </div>
+    <img src="{{ url_for('static', filename='img/m-index.png') }}" alt="layout mobile do informativos">
+    <img src="{{ url_for('static', filename='img/d-index.png') }}" alt="layout desktop do informativos">
+    <img src="{{ url_for('static', filename='img/m-edit.png') }}" alt="layout mobile do editar">
+    <img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do editar">
+    <img src="{{ url_for('static', filename='img/m-more.png') }}" alt="layout mobile do ler mais">
+    <img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do ler mais">
+    <p class="project-spec">Design</p>
+    <p class="project-tool">AdobeXD</p>
+    <p class="project-spec">Desenvolvido</p>
+    <p class="project-tool">Flask</p>
+    <a href="{{ url_for('job')}}"><button class="btn btn-white">Ver projeto</button></a>
   </div>
 </section>
 
-<section class="section section-4">
-  <div class="section-wrapper wrapper4">
-    <div class="section-left">
-      <h1 class="section-title">MINHAS HABILIDADES</h1>
-      <p>Breve descrição sobre o as habilidades que possuo como desenvolvedor e uma página com mais detalhes e
-        acesso
-        ao meu currículo</p>
-      <a href="curriculum.html"><button class="btn btn-style1">Veja meu currículo</button></a>
-    </div>
-    <div class="section-right">
-      <div class="right-grid top-grid">
-        <div class="card">
-          <h2>Web Developer</h2>
-          <p>breve descrição sobre o que faço como desenvolvedor web</p>
-          <div class="skills">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JS</p>
-          </div>
-        </div>
-      </div>
-      <div class="right-grid bottom-grid">
-        <div class="card">
-          <h2>Designer</h2>
-          <p>Breve descrição sobre o que faço como designer</p>
-          <div class="skills">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JS</p>
-          </div>
-        </div>
-        <div class="card">
-          <h2>Back-end dev</h2>
-          <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
-          <div class="skills">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JS</p>
-          </div>
-        </div>
+<section class="curriculum-section">
+  <div class="container">
+    <p class="section-label">curriculo</p>
+    <h2 class="section-title">Minhas habilidades</h2>
+    <p class="section-paragraph">Breve descrição sobre o as habilidades que possuo como desenvolvedor e uma página com
+      mais detalhes e acesso ao
+      meu
+      currículo</p>
+    <div class="card">
+      <h3>Web Developer
+      </h3>
+      <p>breve descrição sobre o que faço como desenvolvedor web</p>
+      <div class="skills">
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JS</p>
       </div>
     </div>
+    <div class="card">
+      <h3>Designer</h3>
+      <p>Breve descrição sobre o que faço como designer</p>
+      <div class="skills">
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JS</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Back-end dev</h3>
+      <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
+      <div class="skills">
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JS</p>
+      </div>
+    </div>
+    <a href="{{ url_for('curriculum')}}"><button class="btn">Veja meu currículo</button></a>
   </div>
 </section>
-{% endblock %}
-
-{% block footer %}
 {% endblock %}
