@@ -56,10 +56,16 @@
       </div>
     </div>
     <a href="{{ url_for('job')}}"><button class="btn btn-white">Ver projeto</button></a>
-    <img src="{{ url_for('static', filename='img/m-index.png') }}" alt="layout mobile do informativos">
-    <img src="{{ url_for('static', filename='img/d-index.png') }}" alt="layout desktop do informativos">
-    <img src="{{ url_for('static', filename='img/m-edit.png') }}" alt="layout mobile do editar">
-    <img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do editar">
+    <div class="split img-wrapper">
+      <div>
+        <div><img src="{{ url_for('static', filename='img/m-index.png') }}" alt="layout mobile do informativos"></div>
+        <div><img src="{{ url_for('static', filename='img/d-index.png') }}" alt="layout desktop do informativos"></div>
+      </div>
+      <div>
+        <div><img src="{{ url_for('static', filename='img/m-edit.png') }}" alt="layout mobile do editar"></div>
+        <div><img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do editar"></div>
+      </div>
+    </div>
   </div>
 </section>
 
