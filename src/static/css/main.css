@@ -14,18 +14,29 @@
   --ff-monospace: 'JetBrains Mono', monospace;
   
   
-  --fs-section-label: 1rem;
-  --fs-paragraph: 1.125rem;
-  --fs-main-subtitle: 1.25rem;
-  --fs-btn-text: 1.4rem;
-  --fs-main-title: 2.5rem;
-  --fs-title: 3rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 3rem;
+  --fs-xl: clamp(2.5rem, 7vw + 1rem, 6.125rem);
   
+  --fs-btn: 1.4rem;
   --fs-social-icon: 2.15rem;
   --fs-card-title: 1.75rem;
   
   --border-radius-bg: 2.5em;
   --border-radius-container: .625em;
+}
+
+@media (min-width:40em){
+  :root{
+    --fs-300: 1.375rem;
+    --fs-400: 1.75rem;
+    --fs-500: 2rem;
+    --fs-600: 4.25rem;
+    
+    --fs-btn: 1.5rem;
+  }
 }
 
 /* base styles */
@@ -52,12 +63,16 @@ body{
 p{
   font-weight: 400;
   line-height: 1.5;
-  font-size: var(--fs-paragraph);
+  font-size: var(--fs-400);
+}
+
+h1{
+  max-width: 10ch;
 }
 
 h1, h2{
   font-weight: 800;
-  font-size: var(--fs-title);
+  font-size: var(--fs-600);
 }
 
 h3{
@@ -71,6 +86,11 @@ h1, h2, h3{
 
 section{
   padding: 10rem 0;
+}
+
+section p,
+section h2{
+  max-width: 50ch;
 }
 
 img{
@@ -124,6 +144,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .section-label{
   text-transform: uppercase;
+  font-size: var(--fs-300);
 }
 
 .section-paragraph{
@@ -162,7 +183,7 @@ img, .photo-container{
 .btn{
   padding: 1rem 2.5rem;
   font-weight: 500;
-  font-size: var(--fs-btn-text);
+  font-size: var(--fs-btn);
   border-radius: 10px;
   max-width: 100%;
   text-transform: capitalize;
@@ -194,7 +215,7 @@ img, .photo-container{
 }
 
 .main-title{
-  font-size: var(--fs-main-title);
+  font-size: var(--fs-xl);
   margin-bottom: 4rem;
 }
 
@@ -210,7 +231,7 @@ img, .photo-container{
 }*/
 
 .main-subtitle{
-  font-size: var(--fs-main-subtitle);
+  font-size: var(--fs-500);
 }
 
 /* about section */
@@ -276,17 +297,23 @@ img, .photo-container{
 
 /* Skills */
 
+.curriculum-section button{
+  margin-bottom: 7rem;
+}
+
 .card{
   font-size: var(--fs-card-title);
   background-color: var(--clr-neutral-700);
   border-radius: var(--border-radius-container);
   padding: 4rem 2rem;
-  width: min(17rem);
+  width: min(17rem, 85%);
+  flex-shrink: 0;
 }
 
 .card h3{
   font-weight: 500;
   word-wrap: break-word;
+  min-height: 4.5rem;
 }
 
 .card p{
@@ -304,7 +331,7 @@ img, .photo-container{
   padding: 0.15rem .75rem;
   border-radius: 1rem;
   font-weight: 700;
-  font-size: var(--fs-section-label);
+  font-size: var(--fs-300);
   gap: 1rem
 }
 

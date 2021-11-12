@@ -60,8 +60,6 @@
     <img src="{{ url_for('static', filename='img/d-index.png') }}" alt="layout desktop do informativos">
     <img src="{{ url_for('static', filename='img/m-edit.png') }}" alt="layout mobile do editar">
     <img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do editar">
-    <img src="{{ url_for('static', filename='img/m-more.png') }}" alt="layout mobile do ler mais">
-    <img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do ler mais">
   </div>
 </section>
 
@@ -73,37 +71,22 @@
       mais detalhes e acesso ao
       meu
       currículo</p>
+    <a href="{{ url_for('curriculum')}}"><button class="btn">Veja meu currículo</button></a>
     <div class="card-wrapper">
       <div class="card">
         <h3>Web Developer
         </h3>
         <p>breve descrição sobre o que faço como desenvolvedor web</p>
-        <div class="skills">
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>JS</p>
-        </div>
       </div>
       <div class="card">
         <h3>Designer</h3>
         <p>Breve descrição sobre o que faço como designer</p>
-        <div class="skills">
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>JS</p>
-        </div>
       </div>
       <div class="card">
         <h3>Back-end dev</h3>
         <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
-        <div class="skills">
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>JS</p>
-        </div>
       </div>
     </div>
-    <a href="{{ url_for('curriculum')}}"><button class="btn">Veja meu currículo</button></a>
   </div>
 </section>
 {% endblock %}
