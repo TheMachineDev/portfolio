@@ -19,6 +19,7 @@
       <i class="fab fa-dribbble icon"></i>
       <i class="fab fa-linkedin icon"></i>
       <i class="fab fa-github icon"></i>
+      <div class="line"></div>
     </div>
   </div>
 </section>
@@ -44,17 +45,23 @@
     <h2 class="section-title">Fatec SJC App</h2>
     <p class="section-paragraph">Aqui terá uma breve descrição sobre os projetos que já fiz (ou terminarei, como o API
       desse Semestre)</p>
+    <div class="job-spec">
+      <div>
+        <p class="project-spec">Design</p>
+        <p class="project-tool">AdobeXD</p>
+      </div>
+      <div>
+        <p class="project-spec">Desenvolvido</p>
+        <p class="project-tool">Flask</p>
+      </div>
+    </div>
+    <a href="{{ url_for('job')}}"><button class="btn btn-white">Ver projeto</button></a>
     <img src="{{ url_for('static', filename='img/m-index.png') }}" alt="layout mobile do informativos">
     <img src="{{ url_for('static', filename='img/d-index.png') }}" alt="layout desktop do informativos">
     <img src="{{ url_for('static', filename='img/m-edit.png') }}" alt="layout mobile do editar">
     <img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do editar">
     <img src="{{ url_for('static', filename='img/m-more.png') }}" alt="layout mobile do ler mais">
     <img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do ler mais">
-    <p class="project-spec">Design</p>
-    <p class="project-tool">AdobeXD</p>
-    <p class="project-spec">Desenvolvido</p>
-    <p class="project-tool">Flask</p>
-    <a href="{{ url_for('job')}}"><button class="btn btn-white">Ver projeto</button></a>
   </div>
 </section>
 
@@ -66,32 +73,34 @@
       mais detalhes e acesso ao
       meu
       currículo</p>
-    <div class="card">
-      <h3>Web Developer
-      </h3>
-      <p>breve descrição sobre o que faço como desenvolvedor web</p>
-      <div class="skills">
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>JS</p>
+    <div class="card-wrapper">
+      <div class="card">
+        <h3>Web Developer
+        </h3>
+        <p>breve descrição sobre o que faço como desenvolvedor web</p>
+        <div class="skills">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JS</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <h3>Designer</h3>
-      <p>Breve descrição sobre o que faço como designer</p>
-      <div class="skills">
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>JS</p>
+      <div class="card">
+        <h3>Designer</h3>
+        <p>Breve descrição sobre o que faço como designer</p>
+        <div class="skills">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JS</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <h3>Back-end dev</h3>
-      <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
-      <div class="skills">
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>JS</p>
+      <div class="card">
+        <h3>Back-end dev</h3>
+        <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
+        <div class="skills">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JS</p>
+        </div>
       </div>
     </div>
     <a href="{{ url_for('curriculum')}}"><button class="btn">Veja meu currículo</button></a>
