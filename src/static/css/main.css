@@ -37,22 +37,24 @@
     
     --fs-btn: 1.5rem;
   }
-  
-  .split{
-    display: flex;
-  }
-  
-  .img-wrapper div{
-    display: flex;
-    gap: 3rem;
-  }
-  
+
   
   .img-wrapper img{
     align-self: center;
     max-height: 40rem;
   }
+}
+
+@media (min-width:64rem){
+  :root{
+    --border-radius-bg: 5em;
+  }
   
+  .split{
+    display: flex;
+    justify-content: space-between;
+    gap:3rem;
+  }
   
 }
 
@@ -107,7 +109,7 @@ section{
 
 section p,
 section h2{
-  max-width: 50ch;
+  max-width: 35ch;
 }
 
 img{
@@ -143,11 +145,6 @@ button, input[type="submit"], input[type="reset"] {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0rem;
-}
-
-.photo-container{
-  background-color: var(--clr-primary-200);
-  margin-bottom: 4em;
 }
 
 .section-bg{
@@ -228,7 +225,7 @@ img, .photo-container{
 
 .main-section{
   min-height: 85vh;
-  padding-bottom: 9rem;
+  padding-bottom: 8.5rem;
 }
 
 .main-title{
@@ -260,10 +257,14 @@ img, .photo-container{
   margin-bottom: -5em;
 }
 
+.about-section .section-paragraph{
+  margin-bottom: 2.5em;
+}
+
 .photo-container{
-  padding: 4rem 0;
   display: flex;
   flex-direction: column;
+  background-color: var(--clr-primary-200);
 }
 
 .photo-container h3{
@@ -275,6 +276,8 @@ img, .photo-container{
   font-size: 16rem;
   margin-bottom: 3rem;
 }
+
+
 
 /* job */
 
@@ -322,15 +325,15 @@ img, .photo-container{
   font-size: var(--fs-card-title);
   background-color: var(--clr-neutral-700);
   border-radius: var(--border-radius-container);
-  padding: 4rem 2rem;
+  padding: 5rem 1.5rem;
   width: min(17rem, 85%);
   flex-shrink: 0;
+  position: relative;
 }
 
 .card h3{
   font-weight: 500;
   word-wrap: break-word;
-  min-height: 4.5rem;
 }
 
 .card p{
@@ -359,4 +362,8 @@ img, .photo-container{
   gap: 2rem;
   margin-bottom: 4rem;
   overflow: auto;
+}
+
+.card--icon{
+  margin-bottom:2rem;
 }

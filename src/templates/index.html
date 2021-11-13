@@ -27,41 +27,53 @@
 <section class="about-section">
   <div class="section-bg"></div>
   <div class="container">
-    <div class="photo-container">
-      <i class="fas fa-user-circle text-center icon"></i>
-      <h3 class="text-center">FOTO DE PERFIL</h3>
-      <p class="text-center">foto que terá efeitos de filtro e redimensionamento</p>
+    <div class="split items-center">
+      <div class="photo-container py-16 lg:py-48 mb-16 lg:mb-0">
+        <i class="fas fa-user-circle text-center icon"></i>
+        <h3 class="text-center">FOTO DE PERFIL</h3>
+        <p class="text-center">foto que terá efeitos de filtro e redimensionamento</p>
+      </div>
+      <div class="flex-1">
+        <p class="section-label">sobre mim</p>
+        <h2 class="section-title">Amo criar interfaces bonitas</h1>
+          <p class="section-paragraph">Aqui conterá uma breve introdução sobre mim e sobre meus hobbies</p>
+          <a href="{{ url_for('about')}}"><button class="btn">Ver mais sobre</button></a>
+      </div>
     </div>
-    <p class="section-label">sobre mim</p>
-    <h2 class="section-title">Amo criar interfaces bonitas</h1>
-      <p class="section-paragraph">Aqui conterá uma breve introdução sobre mim e sobre meus hobbies</p>
-      <a href="{{ url_for('about')}}"><button class="btn">Ver mais sobre</button></a>
   </div>
 </section>
 
 <section class="job-section job__one">
   <div class="container">
-    <p class="section-label">portfolio</p>
-    <h2 class="section-title">Fatec SJC App</h2>
-    <p class="section-paragraph">Aqui terá uma breve descrição sobre os projetos que já fiz (ou terminarei, como o API
-      desse Semestre)</p>
-    <div class="job-spec">
+    <div class="split">
+      <!-- lg:flex justify-between gap-12 -->
       <div>
-        <p class="project-spec">Design</p>
-        <p class="project-tool">AdobeXD</p>
+        <p class="section-label">portfolio</p>
+        <h2 class="section-title">Fatec SJC App</h2>
+        <p class="section-paragraph">Aqui terá uma breve descrição sobre os projetos que já fiz (ou terminarei, como o
+          API
+          desse Semestre)</p>
       </div>
-      <div>
-        <p class="project-spec">Desenvolvido</p>
-        <p class="project-tool">Flask</p>
+      <div class="">
+        <div class="job-spec mt-7">
+          <div class="mr-20">
+            <p class="project-spec">Design</p>
+            <p class="project-tool">AdobeXD</p>
+          </div>
+          <div>
+            <p class="project-spec">Desenvolvido</p>
+            <p class="project-tool">Flask</p>
+          </div>
+        </div>
+        <a href="{{ url_for('job')}}"><button class="btn btn-white">Ver projeto</button></a>
       </div>
     </div>
-    <a href="{{ url_for('job')}}"><button class="btn btn-white">Ver projeto</button></a>
-    <div class="split img-wrapper">
-      <div>
+    <div class="img-wrapper max-w-xs sm:max-w-none m-auto">
+      <div class="sm:flex gap-12">
         <div><img src="{{ url_for('static', filename='img/m-index.png') }}" alt="layout mobile do informativos"></div>
         <div><img src="{{ url_for('static', filename='img/d-index.png') }}" alt="layout desktop do informativos"></div>
       </div>
-      <div>
+      <div class="sm:flex flex-row-reverse gap-12">
         <div><img src="{{ url_for('static', filename='img/m-edit.png') }}" alt="layout mobile do editar"></div>
         <div><img src="{{ url_for('static', filename='img/d-edit.png') }}" alt="layout desktop do editar"></div>
       </div>
@@ -71,26 +83,34 @@
 
 <section class="curriculum-section">
   <div class="container">
-    <p class="section-label">curriculo</p>
-    <h2 class="section-title">Minhas habilidades</h2>
-    <p class="section-paragraph">Breve descrição sobre o as habilidades que possuo como desenvolvedor e uma página com
-      mais detalhes e acesso ao
-      meu
-      currículo</p>
-    <a href="{{ url_for('curriculum')}}"><button class="btn">Veja meu currículo</button></a>
-    <div class="card-wrapper">
-      <div class="card">
-        <h3>Web Developer
-        </h3>
-        <p>breve descrição sobre o que faço como desenvolvedor web</p>
+    <div class="split">
+      <div class="flex-1">
+        <p class="section-label">curriculo</p>
+        <h2 class="section-title">Minhas habilidades</h2>
+        <p class="section-paragraph">Breve descrição sobre o as habilidades que possuo como desenvolvedor e uma página
+          com
+          mais detalhes e acesso ao
+          meu
+          currículo</p>
+        <a href="{{ url_for('curriculum')}}"><button class="btn">Veja meu currículo</button></a>
       </div>
-      <div class="card">
-        <h3>Designer</h3>
-        <p>Breve descrição sobre o que faço como designer</p>
-      </div>
-      <div class="card">
-        <h3>Back-end dev</h3>
-        <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
+      <div class="card-wrapper self-center">
+        <div class="card">
+          <i class="fas fa-laptop-code card--icon"></i>
+          <h3>Web Developer
+          </h3>
+          <p>breve descrição sobre o que faço como desenvolvedor web</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-layer-group card--icon"></i>
+          <h3>Designer</h3>
+          <p>Breve descrição sobre o que faço como designer</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-server card--icon"></i>
+          <h3>Back-end dev</h3>
+          <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
+        </div>
       </div>
     </div>
   </div>
