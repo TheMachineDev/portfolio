@@ -1,14 +1,8 @@
-.bg-white{
-  background: var(--clr-neutral-100);
+:root{
+  --fs-600: 2.5rem;
 }
 
 /* section 1 */
-
-.header-section__about{
-  min-height: 87vh;
-  display: flex;
-  align-items: center;
-}
 
 .header-section__about h1{
   font-size: var(--fs-xl);
@@ -20,12 +14,9 @@
   color: var(--clr-neutral-1000);
   padding: 12em 0;
   border-radius: 0 var(--border-radius-bg);
+  position: initial;
 }
 
-
-.about-hobby h3{
-  font-size: var(--fs-500);
-}
 
 
 .hobby-card{
@@ -40,13 +31,3 @@
 
 /* section 3 */
 
-.to-be-added{
-  padding: 20em 0;
-}
-
-.to-be-added h2{
-  max-width: 1000px;
-  margin:0 auto;
-  text-align: center;
-  font-weight: 500;
-}

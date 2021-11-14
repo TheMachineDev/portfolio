@@ -1,81 +1,18 @@
-@import url('variables.css');
-
-body{
-  background-color: var(--main-bg-color);
-}
-
-/* section 1 */
-
-.my-curriculum{
-  margin: auto;
-}
-
-.my-curriculum h1{
-  font-size: 4em;
-}
-
-.my-curriculum p{
-  width: 600px;
-}
-
 /* section 2 */
-
-.midle-tragectory{
-  height: auto;
-  background-color: var(--primary-font-color);
-}
-
-.left-about-me h1{
-  font-size: 2em;
-}
-
-.circle{
-  border-radius: 100%;
-  width: 20px;
-  height: 20px;
-  background: black;
-}
-
-.right-about-me{
-  padding-top: 200px;
-  padding-bottom: 300px;
-}
-
-.right-about-me p{
-  margin-top: 100px;
-}
-
-.skills{
-  height: 1200px;
+@media (min-width:64rem) {
+  :root{
+    --fs-600: 52px;
+  }
 }
 
 /* section 3 */
-
-.skills-section{
-  height: auto;
-  padding-top: 300px;
-  padding-bottom: 300px;
-}
-
-.skills-section h1{
-  font-size: 2em;
-  margin-bottom: 60px;
+.skills-section h2{
+  margin-bottom: 4rem;
+  font-size: var(--fs-600);
 }
 
 .skills-section p{
-  margin-bottom: 50px;
-}
-
-.flex-them{
-  display: flex;
-}
-
-.left-skills, .right-skills{
-  flex: 1 1 0;
-}
-
-.left-skills > .btn{
-  margin-top: 50px;
+  margin-bottom: 3rem;
 }
 
 .btn-desc{
@@ -84,5 +21,5 @@ body{
 }
 
 .btn-desc p{
-  font-size: .7em;
+  font-size: 1rem;
 }

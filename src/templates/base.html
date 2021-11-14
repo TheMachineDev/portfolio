@@ -21,7 +21,7 @@
   <div class="background-wrapper">
   </div>
 
-  <header class="header">
+  <header class="header fixed w-full">
     <div class="container nav-container">
       <a href="{{ url_for('index') }}">
         <div class="logo">
@@ -39,13 +39,17 @@
           </svg>
         </div>
       </a>
-      <nav class="navbar flex">
+      <nav class="navbar flex" id="menu">
         <div class="m-auto flex gap-4 lg:gap-8">
           <a class="nav__link" href="{{ url_for('about') }}">SOBRE</a>
           <a class="nav__link" href="{{ url_for('job') }}">TRABALHOS</a>
           <a class="nav__link" href="{{ url_for('curriculum') }}">CURRÍCULO</a>
         </div>
       </nav>
+      <button class="hamburger-wrapper" id="hamburger">
+        <div class="hamburger">
+        </div>
+      </button>
     </div>
   </header>
 
@@ -63,6 +67,7 @@
   {% endblock %}
 </body>
 <script src="https://kit.fontawesome.com/45634ba403.js" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 {% block javascript %}
 {% endblock %}
 

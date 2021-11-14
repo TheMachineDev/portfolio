@@ -1,93 +1,22 @@
-
-/* base styles */
-
-body{
-  background-color: var(--primary-color);
-}
-
-/* section */
-
-.section{
-  width: 100%;
-  display: flex;
-}
-
 /* section 1 */
-
-.intro-wrapper{
-  display: flex;
-  align-items: center;
-}
-
-.job-intro-section{
-  height: 500px;
-  background-color: var(--main-bg-color);
-}
-
-.title p{
-  font-size: 2em;
+.main-section__job h1{
+  max-width: none;
 }
 
 /* section 2 */
-
-.project-img{
-  height: 1300px;
-  background-color: var(--primary-color);
+.img-section{
+  border-radius: 0 var(--border-radius-bg) var(--border-radius-bg) 0;
+  z-index: -1;
+  position: relative;
 }
 
-.project-img h1, .to-be-added h1{
-  font-size: 5em;
-  margin:auto !important;
-  text-align: center;
-  line-height: 1em;
-}
 
 /* section 3 */
-.section-prod{
-  color: black;
-  height: 1080px;
+.prod-section{
+  margin-top: -5rem;
+  z-index: -3;
+  position: relative;
+  border-radius: 0 0 0 var(--border-radius-bg);
 }
-
-.wrapper-prod{
-  display: flex;
-  align-items: center;
-  gap: 100px;
-}
-
-.wrapper-prod h1{
-  font-size: 3em;
-  line-height: 1em;
-  margin-bottom: 75px;
-}
-
-.wrapper-prod h2{
-  line-height: 1em;
-}
-
-.wrapper-prod p{
-  margin-bottom: 30px;
-}
-
-.prod-right{
-  flex: 1.2 1 0;
-}
-
-.prod-left{
-  flex: 1 1 0;
-}
-
-/* section 4 */
-
-.to-be-added{
-  background-color: var(--main-bg-color);
-  height: 1300px;
-  font-weight: 500;
-}
-
-.to-be-added h1{
-  max-width: 1000px;
-}
-
-
 
 

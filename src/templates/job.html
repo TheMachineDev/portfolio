@@ -7,35 +7,40 @@
 {% block title %}Curriculum{% endblock %}
 
 {% block main %}
-<section class="section job-intro-section">
-  <div class="section-wrapper intro-wrapper">
-    <div class="title">
-      <h1>NOME DO PROJETO</h1>
-      <p>Subtítulo do projeto</p>
-    </div>
+<section class="main-section__job">
+  <div class="container">
+    <h1 class="main-title">Nome do projeto</h1>
+    <p>Subtítulo do projeto</p>
   </div>
 </section>
-<section class="section project-img">
-  <h1>IMAGEM DO PROJETO</h1>
+
+<section class="bg-primary py-64 lg:py-96 img-section">
+  <div class="container">
+    <h2 class="text-center">IMAGEM DO PROJETO</h2>
+  </div>
 </section>
 
-<section class="section section-prod">
-  <div class="section-wrapper wrapper-prod">
-    <div class="prod-right">
-      <h1>Visão geral</h1>
-      <p>Descrição geral sobre o projeto, o que ele faz, por que foi feito, seu objetivo, etc e o que eu fiz nesse
-        projeto.</p>
-    </div>
-    <div class="prod-left">
-      <h2>CLIENTE</h2>
-      <p>Nome do cliente</p>
-      <h2>SERVIÇOS PROVIDOS</h2>
-      <p>Ex:Desenvolvimento Front-End Design UI e UX</p>
+<section class="prod-section bg-white py-64">
+  <div class="container">
+    <div class="split">
+      <div class="mb-10">
+        <h2>Visão geral</h2>
+        <p>Descrição geral sobre o projeto, o que ele faz, por que foi feito, seu objetivo, etc e o que eu fiz nesse
+          projeto.</p>
+      </div>
+      <div>
+        <h3>CLIENTE</h3>
+        <p class="mb-6">Nome do cliente</p>
+        <h3>SERVIÇOS PROVIDOS</h3>
+        <p>Ex:Desenvolvimento Front-End Design UI e UX</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section to-be-added">
-  <h1>Provavel detalhamento do projeto e adição de outras imagens</h1>
+  <div class="container">
+    <h2>Provavel detalhamento do projeto e adição de outras imagens</h2>
+  </div>
 </section>
 {% endblock %}
