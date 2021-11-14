@@ -18,7 +18,7 @@
   --fs-400: 1.125rem;
   --fs-500: 1.25rem;
   --fs-600: 3rem;
-  --fs-xl: clamp(2.5rem, 7vw + 1rem, 6.125rem);
+  --fs-xl: clamp(1rem, 6.5vw + 1rem, 6.125rem);
   
   --fs-btn: 1.4rem;
   --fs-social-icon: 2.15rem;
@@ -92,6 +92,25 @@
   }
 }
 
+@media (max-width:22em){
+  :root{
+    --fs-600: 2rem !important;
+    --fs-xl: clamp(1rem, 6vw + .75rem, 6.125rem);
+  }
+  
+  .nav__link{
+    font-size: 2rem !important;
+  }
+  
+  h1, h2, h3, p{
+    word-wrap: break-word;
+  }
+  
+  .main-subtitle{
+    font-size: 1rem !important;
+  }
+}
+
 /* base styles */
 *,
 *::after,
@@ -125,7 +144,7 @@ p{
 }
 
 h1{
-  max-width: 10ch;
+  max-width: 15ch;
 }
 
 h1, h2{
@@ -291,6 +310,8 @@ img, .photo-container{
 
 .logo{
   max-width: 77px;
+  z-index: 1000;
+  position: relative;
 }
 
 /* nav */
@@ -388,6 +409,10 @@ img, .photo-container{
 .photo-container h3{
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.photo-container svg{
+  width: 95%;
 }
 
 .photo-container .icon{
