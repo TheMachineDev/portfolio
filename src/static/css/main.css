@@ -169,7 +169,7 @@ button, input[type="submit"], input[type="reset"] {
   margin-top: 6rem;
   display: flex;
   align-items: center;
-  max-width: 40em;
+  max-width: 47.4em;
 }
 
 .social .icon{
@@ -209,6 +209,14 @@ img, .photo-container{
 .logo{
   max-width: 77px;
 }
+
+/* nav */
+
+.nav__link{
+  font-size: var(--fs-300);
+  font-weight: 600;
+}
+
 
 /* footer */
 .footer{

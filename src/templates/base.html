@@ -39,10 +39,12 @@
           </svg>
         </div>
       </a>
-      <nav class="navbar">
-        <a class="nav__link" href="{{ url_for('about') }}">SOBRE</a>
-        <a class="nav__link" href="{{ url_for('job') }}">TRABALHOS</a>
-        <a class="nav__link" href="{{ url_for('curriculum') }}">CURRÍCULO</a>
+      <nav class="navbar flex">
+        <div class="m-auto flex gap-4 lg:gap-8">
+          <a class="nav__link" href="{{ url_for('about') }}">SOBRE</a>
+          <a class="nav__link" href="{{ url_for('job') }}">TRABALHOS</a>
+          <a class="nav__link" href="{{ url_for('curriculum') }}">CURRÍCULO</a>
+        </div>
       </nav>
     </div>
   </header>

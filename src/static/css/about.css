@@ -1,60 +1,32 @@
-
-body{
-  background: var(--primary-font-color);
+.bg-white{
+  background: var(--clr-neutral-100);
 }
 
 /* section 1 */
 
-.primary-about{
-  background-color: var(--main-bg-color);
-  gap: 50px;
+.header-section__about{
+  min-height: 87vh;
+  display: flex;
+  align-items: center;
 }
 
-.about-desc{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header-section__about h1{
+  font-size: var(--fs-xl);
 }
 
 /* section 2 */
 
-.midle-about{
-  height: auto;
-  color: black;
-  flex-direction: column;
+.about-section{
+  color: var(--clr-neutral-1000);
+  padding: 12em 0;
+  border-radius: 0 var(--border-radius-bg);
 }
 
-.about-me-wrapper{
-  display: flex;
+
+.about-hobby h3{
+  font-size: var(--fs-500);
 }
 
-.left-about-me, .right-about-me{
-  flex: 1 1 0;
-}
-
-.left-about-me h1, .about-hobby-title{
-  font-size: 2.5em;
-  font-weight: 700;
-  margin-top: 2.5em;
-}
-
-.right-about-me p{
-  margin-top: 300px;
-}
-
-.about-me{
-  margin-bottom: 100px;
-}
-
-.about-hobby-title{
-  margin-bottom: 100px;
-  font-weight: 700;
-}
-
-.hobby-cards-wrapper{
-  display: flex;
-  gap:75px;
-}
 
 .hobby-card{
   flex: 1 1 0;
@@ -62,26 +34,19 @@ body{
 }
 
 .hobby-card p{
-  font-weight: 100;
+  font-size: var(--fs-300);
 }
 
-.about-hobby{
-  margin-bottom: 200px;
-}
 
 /* section 3 */
 
 .to-be-added{
-  background-color: var(--main-bg-color);
-  height: 1300px;
-  font-weight: 500;
+  padding: 20em 0;
 }
 
-.to-be-added h1{
+.to-be-added h2{
   max-width: 1000px;
-  font-size: 5em;
-  margin:auto !important;
+  margin:0 auto;
   text-align: center;
-  line-height: 1em;
   font-weight: 500;
 }
