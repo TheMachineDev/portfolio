@@ -77,5 +77,3 @@ flask run
 
 - Video do youtube (Entrega 2): **[Clique Aqui](https://youtu.be/iFodw-A0v_c)**
 
-
-- Acesso ao website: **https://bit.ly/tm_portfolio_io**
