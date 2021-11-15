@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
   {% block head %}
   {% endblock %}
@@ -67,6 +68,7 @@
   {% endblock %}
 </body>
 <script src="https://kit.fontawesome.com/45634ba403.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 {% block javascript %}
 {% endblock %}

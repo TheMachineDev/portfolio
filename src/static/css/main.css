@@ -37,7 +37,6 @@
     
     --fs-btn: 1.5rem;
   }
-
   
   .img-wrapper img{
     align-self: center;
@@ -59,6 +58,10 @@
     justify-content: space-between;
     gap:3rem;
   }
+  
+}
+
+@media (min-width:1920px){
   
 }
 
@@ -89,6 +92,10 @@
   .hamburger,
   .hamburger::after{
     display: inline-block;
+  }
+  
+  .card h3{
+    font-size: 1.5rem;
   }
 }
 
@@ -468,15 +475,18 @@ img, .photo-container{
   font-size: var(--fs-card-title);
   background-color: var(--clr-neutral-700);
   border-radius: var(--border-radius-container);
-  padding: 5rem 1.5rem;
+  padding: 4rem 1.5rem;
   width: min(17rem, 85%);
-  flex-shrink: 0;
-  position: relative;
+  /*flex-shrink: 0;
+  position: relative;*/
+  margin-right: 2rem;
+  height: 24rem;
 }
 
 .card h3{
   font-weight: 500;
   word-wrap: break-word;
+  min-height: 2em;
 }
 
 .card p{

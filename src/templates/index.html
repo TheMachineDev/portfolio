@@ -102,22 +102,24 @@
           currículo</p>
         <a href="{{ url_for('curriculum')}}"><button class="btn">Veja meu currículo</button></a>
       </div>
-      <div class="card-wrapper self-center">
-        <div class="card">
-          <i class="fas fa-laptop-code card--icon"></i>
-          <h3>Web Developer
-          </h3>
-          <p>breve descrição sobre o que faço como desenvolvedor web</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-layer-group card--icon"></i>
-          <h3>Designer</h3>
-          <p>Breve descrição sobre o que faço como designer</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-server card--icon"></i>
-          <h3>Back-end dev</h3>
-          <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
+      <div class="flex-1 self-center">
+        <div class="main-carousel" id="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="card carousel-cell">
+            <i class="fas fa-laptop-code card--icon"></i>
+            <h3>Web Developer
+            </h3>
+            <p>breve descrição sobre o que faço como desenvolvedor web</p>
+          </div>
+          <div class="card carousel-cell">
+            <i class="fas fa-layer-group card--icon"></i>
+            <h3>Designer</h3>
+            <p>Breve descrição sobre o que faço como designer</p>
+          </div>
+          <div class="card carousel-cell">
+            <i class="fas fa-server card--icon"></i>
+            <h3>Back-end dev</h3>
+            <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
+          </div>
         </div>
       </div>
     </div>
