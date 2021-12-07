@@ -1,13 +1,8 @@
 /* section 2 */
-@media (min-width:64rem) {
-  :root{
-    --fs-600: 3.25rem;
-  }
-}
 
 /* section 3 */
 .skills-section h2{
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
   font-size: var(--fs-600);
 }
 
@@ -15,11 +10,3 @@
   margin-bottom: 3rem;
 }
 
-.btn-desc{
-  margin-top: 20px;
-  width: 200px;
-}
-
-.btn-desc p{
-  font-size: 1rem;
-}

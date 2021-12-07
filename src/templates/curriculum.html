@@ -8,12 +8,10 @@
 {% block title %}Curriculum{% endblock %}
 
 {% block main %}
-<section class="main-section">
+<section class="main-section" id="main-section">
   <div class="container">
-    <h1>Meu currículo</h1>
-    <p>Breve descrição sobre o as habilidades que possuo como desenvolvedor e uma página com mais detalhes e acesso
-      ao
-      meu currículo</p>
+    <h1>Minhas habilidades</h1>
+    <p>Desenvolvedor fullstack e designer com foco em desenvolvimento de aplicações web.</p>
   </div>
 </section>
 
@@ -21,14 +19,22 @@
   <div class="container">
     <div class="split">
       <div>
-        <h2 class="mb-24">- TRAGETÓRIA CURRICULAR (cada tópico falara um pouco sobre as escolas que passei)</h2>
+        <h2 class="mb-24">Tragetória curricular</h2>
         <!--<div class="circle"></div>
         <div class="line"></div>-->
       </div>
-      <div class="lg:mt-64">
-        <p class="mb-12"> Minha tragetória na ETEC SP, como conheci a programação e me graduei como técnico </p>
-        <p> Minha tragetória na FATEC SJC, como está indo, como estou dando continuidade a minha carreira como
-          desenvolvedor</p>
+      <div class="lg:mt-64 xl:flex-1">
+        <p class="mb-12 lg:mb-20">
+          <b class="block">ETESP - SÃO PAULO, BOM RETIRO</b>
+          Técnico em informática integrado ao Ensino médio, 3 anos de curso, aulas de programação front-end e back-end,
+          desenvolvimento de projetos (TCM e TCC) sozinho e com equipe.
+        </p>
+        <p>
+          <b class="block">FATEC - SÃO JOSÉ DOS CAMPOS</b>
+          Atualmente cursando o primeiro semestre do curso de Desenvolvimento de Software de Multiplataform que promove
+          uma gradução (tecnólogo), desenvolvedor fullstack atravéz de projetos integrados que seram desenvolvidos para
+          a fatec (1 semestre) e outras empresas do parque tecnológico.
+        </p>
       </div>
     </div>
   </div>
@@ -36,7 +42,7 @@
 
 <section class="skills-section lg:py-64">
   <div class="container">
-    <h2>- TECNOLOGIAS CONHECIDAS</h2>
+    <h2>Técnologias conhecidas</h2>
     <div class="split mb-24">
       <div>
         <h3>DESENVOLVIMENTO WEB </h3>
@@ -50,11 +56,6 @@
       </div>
     </div>
     <button class="btn">Ver currículo completo</button>
-    <div class="btn-desc">
-      <i class="fas fa-arrow-up"></i>
-      <p>(leva o cliente a um pdf
-        com o currículo completo)</p>
-    </div>
   </div>
 </section>
 {% endblock %}

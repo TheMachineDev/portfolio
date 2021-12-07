@@ -8,6 +8,7 @@
   border-radius: 0 var(--border-radius-bg) var(--border-radius-bg) 0;
   z-index: -1;
   position: relative;
+  padding: 0;
 }
 
 

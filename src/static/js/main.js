@@ -20,3 +20,14 @@ window.addEventListener("resize", () => {
     document.body.classList.remove("resize-animation-stopper");
   }, 100);
 });
+
+//smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});

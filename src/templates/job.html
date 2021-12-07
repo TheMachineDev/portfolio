@@ -7,25 +7,23 @@
 {% block title %}Curriculum{% endblock %}
 
 {% block main %}
-<section class="main-section__job">
+<section class="main-section__job" id="main-section">
   <div class="container">
-    <h1 class="main-title">Nome do projeto</h1>
-    <p>Subtítulo do projeto</p>
+    <h1 class="main-title">Fatec SJC App</h1>
+    <p>Portal de informações da Fatec SJC</p>
   </div>
 </section>
 
-<section class="bg-primary py-64 lg:py-96 img-section">
-  <div class="container">
-    <h2 class="text-center">IMAGEM DO PROJETO</h2>
-  </div>
+<section class="bg-primary img-section">
+  <img src="{{ url_for('static', filename='img/foto-projeto-fatec-app.png') }}" alt="foto do projeto fatec app">
 </section>
 
-<section class="prod-section bg-white py-64">
+<section class="prod-section bg-white py-64 lg:py-96">
   <div class="container">
     <div class="split">
       <div class="mb-10">
         <h2>Visão geral</h2>
-        <p>Descrição geral sobre o projeto, o que ele faz, por que foi feito, seu objetivo, etc e o que eu fiz nesse
+        <p>Descrição geral  sobre o projeto, o que ele faz, por que foi feito, seu objetivo, etc e o que eu fiz nesse
           projeto.</p>
       </div>
       <div>
@@ -38,9 +36,24 @@
   </div>
 </section>
 
-<section class="section to-be-added">
+<section class="section prod-detalhamento py-64 lg:py-96">
   <div class="container">
-    <h2>Provavel detalhamento do projeto e adição de outras imagens</h2>
+    <h2>Detalhamento</h2>
+    <div class="lg:flex gap-48 mb-12">
+      <div class="mb-10">
+        <h3>TECNOLOGIAS USADAS</h3>
+        <p>Flask</p>
+        <p>PostgreSQL</p>
+        <p>Heroku (Hospedagem)</p>
+      </div>
+      <div>
+        <h3>CARACTERISTICAS</h3>
+        <p>Completamente responsivo</p>
+        <p>Interface intuitiva</p>
+      </div>
+    </div>
+    <a href="https://fatec-sjc-mt.herokuapp.com/"><button class="btn">Acessar projeto</button></a>
+  </div>
   </div>
 </section>
 {% endblock %}

@@ -1,6 +1,4 @@
-:root{
-  --fs-600: 2.5rem;
-}
+
 
 /* section 1 */
 
@@ -8,11 +6,15 @@
   font-size: var(--fs-xl);
 }
 
+h2{
+  font-size: var(--fs-600);
+}
+
 /* section 2 */
 
 .about-section{
   color: var(--clr-neutral-1000);
-  padding: 12em 0;
+  padding: 20rem 0;
   border-radius: 0 var(--border-radius-bg);
   position: initial;
 }

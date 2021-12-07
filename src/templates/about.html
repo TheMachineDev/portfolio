@@ -7,40 +7,50 @@
 {% block title %}About{% endblock %}
 
 {% block main %}
-<section class="main-section">
+<section class="main-section" id="main-section">
   <div class="container">
-    <h1>Sobre mim</h1>
-    <p>Aqui conterá uma breve introdução sobre mim e sobre meus hobbies
-    </p>
+    <h1>Amo criar interfaces bonitas</h1>
+    <p>Eu amo design, programação e jogos.</p>
   </div>
 </section>
 
 <section class="about-section bg-white">
   <div class="container">
-    <div class="about-me lg:flex gap-12 justify-between mb-20 lg:mb-40">
-      <h2>- QUEM SOU EU?</h2>
-      <p class="flex-1 lg:mt-24">Aqui falo meu nome, idade, tragetória como desenvoldor,
-        como conheci a área, onde comecei, onde fiz minha primeira
-        formação como técnico, minha experiencia com trabalho(se possuo ou não)
-        onde estou agora, etc.</p>
+    <div class="about-me lg:flex gap-12 justify-between mb-20 lg:mb-80">
+      <h2 class="flex-1">Quem sou eu?</h2>
+      <div class="flex-1">
+        <p class="flex-1 lg:mt-40 mb-12">Meu nome é Gustavo Pereira Lemes Molina, tenho 20 anos. Começei minha jornada
+          como
+          desenvolvedor na ETEC de São Paulo e atualmente estou cursando a Fatec de São José dos Campos em busca da
+          minha
+          primeira graduação. </p>
+        <div class="photo-container"><img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="foto de perfil">
+        </div>
+      </div>
     </div>
     <div class="about-hobby">
-      <h2>- MEUS HOBBIES</h2>
+      <h2>Meus hobbies</h2>
       <div class="hobby-cards-wrapper lg:flex gap-12">
         <div class="hobby-card mb-8">
           <h3># JOGOS & E-SPORT</h3>
-          <p>Descrição sobre minha experiencia com Jogos e esporte eletrónicos,
-            como a industria evoluiu, por que eu gusto disso, etc.</p>
+          <p>Já nem me lembro quando começei a jogar porém des do momento em que começei nunca mais parei. Em 2014
+            entrei em contato com o Counter-Strike: Global Offensive, o primeiro E-Sport que havia jogado até então e a
+            primeira vez que tive a esperiência de jogar campeonatos amadores com uma equipe. Atualmente jogo mais
+            casualmente e jogos outros jogos, como Forza Horizon 5 e Osu! porém continuo interado no cénario do
+            Conter-Strike.</p>
         </div>
         <div class="hobby-card mb-8">
           <h3># ARTE & DESIGN</h3>
-          <p>Descrição sobre minha experiencia com Arte e Design, como a industria evoluiu,
-            por que eu gusto disso, etc.</p>
+          <p>Quando era menor, gostava muito de desenhar os personagens e paisagens, porém fui parando aos poucos quando
+            fiquei mais velho. Quando entrei na ETESP descobri o design de interfaces e aquele gosto que possuia por
+            desenho evoluiu para o design. Atualmente busco sempre estar interado nos novos custumes e novas maneiras de
+            fazer o design de uma interface. </p>
         </div>
         <div class="hobby-card">
           <h3># ANIMES</h3>
-          <p>Descrição sobre minha experiencia com Animes, como a industria evoluiu, por que eu gusto disso,
-            etc. </p>
+          <p>Nas horas vagas gosto mutio de assistir um anime, ler um manga ou ver uma série. A um momento estava muito
+            interado com os novos lançamentos mas atualmente só assisto/leio algo que me chama a atenção sem tentar
+            muito acompanhar os lançamentos e novidades</p>
         </div>
       </div>
     </div>
@@ -49,8 +59,5 @@
 </section>
 
 <section class="to-be-added">
-  <div class="container">
-    <h2>Provavel adição de imagens sobre os hobbies, etc (talvez adicionarei mais hobbies no futuro)</h2>
-  </div>
 </section>
 {% endblock %}

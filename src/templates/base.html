@@ -19,11 +19,12 @@
 </head>
 
 <body>
-  <div class="background-wrapper">
+  <div class="background-wrapper" id="main-section">
   </div>
 
   <header class="header fixed w-full">
     <div class="container nav-container">
+      {% block logo %}
       <a href="{{ url_for('index') }}">
         <div class="logo">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.601 57">
@@ -40,13 +41,16 @@
           </svg>
         </div>
       </a>
+      {% endblock %}
+      {% block nav %}
       <nav class="navbar flex" id="menu">
         <div class="m-auto flex gap-4 lg:gap-8">
           <a class="nav__link" href="{{ url_for('about') }}">SOBRE</a>
-          <a class="nav__link" href="{{ url_for('job') }}">TRABALHOS</a>
+          <a class="nav__link" href="{{ url_for('index') }}#jobs">TRABALHOS</a>
           <a class="nav__link" href="{{ url_for('curriculum') }}">CURRÍCULO</a>
         </div>
       </nav>
+      {% endblock %}
       <button class="hamburger-wrapper" id="hamburger">
         <div class="hamburger">
         </div>
@@ -62,8 +66,15 @@
   {% block footer %}
   <footer class="footer">
     <div class="section-bg"></div>
-    <p>tm.dev.io@gmail.com</p>
-    <p>TheMachineDev(GitHub)</p>
+    <div class="container lg:flex justify-between items-end">
+      <div class="mb-20 lg:mb-0">
+        <p><b>EMAIL:</b> tm.dev.io@gmail.com</p>
+        <p><b>GITHUB:</b> TheMachineDev(GitHub)</p>
+      </div>
+      <a href="#main-section">
+        <p><b>VOLTAR AO TOPO</b></p>
+      </a>
+    </div>
   </footer>
   {% endblock %}
 </body>

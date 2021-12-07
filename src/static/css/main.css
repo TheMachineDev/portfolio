@@ -59,6 +59,7 @@
     gap:3rem;
   }
   
+  
 }
 
 @media (min-width:1920px){
@@ -219,6 +220,10 @@ button, input[type="submit"], input[type="reset"] {
   min-height: 96vh;
   display: flex;
   align-items: center;
+  /* background: url("data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' width='720' height='890' viewBox='0 0 720 890'><rect id='Rectangle_146' data-name='Rectangle 146' width='40' height='40' rx='10' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-2' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_175' data-name='Rectangle 175' width='40' height='40' rx='10' transform='translate(85 340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-3' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_176' data-name='Rectangle 176' width='40' height='40' rx='10' transform='translate(170 340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_201' data-name='Rectangle 201' width='40' height='40' rx='10' transform='translate(170 595)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-4' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_177' data-name='Rectangle 177' width='40' height='40' rx='10' transform='translate(255 340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_195' data-name='Rectangle 195' width='40' height='40' rx='10' transform='translate(255 595)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-5' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_178' data-name='Rectangle 178' width='40' height='40' rx='10' transform='translate(340 340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_196' data-name='Rectangle 196' width='40' height='40' rx='10' transform='translate(340 595)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-6' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_179' data-name='Rectangle 179' width='40' height='40' rx='10' transform='translate(425 340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_197' data-name='Rectangle 197' width='40' height='40' rx='10' transform='translate(425 595)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-7' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_180' data-name='Rectangle 180' width='40' height='40' rx='10' transform='translate(510 340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_198' data-name='Rectangle 198' width='40' height='40' rx='10' transform='translate(510 595)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-8' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(595)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_181' data-name='Rectangle 181' width='40' height='40' rx='10' transform='translate(595 340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_199' data-name='Rectangle 199' width='40' height='40' rx='10' transform='translate(595 595)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-9' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(680)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_182' data-name='Rectangle 182' width='40' height='40' rx='10' transform='translate(680 340)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_200' data-name='Rectangle 200' width='40' height='40' rx='10' transform='translate(680 595)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-10' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(0 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-11' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(85 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_168' data-name='Rectangle 168' width='40' height='40' rx='10' transform='translate(85 425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-12' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(170 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_165' data-name='Rectangle 165' width='40' height='40' rx='10' transform='translate(170 425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_202' data-name='Rectangle 202' width='40' height='40' rx='10' transform='translate(170 680)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-13' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(255 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_162' data-name='Rectangle 162' width='40' height='40' rx='10' transform='translate(255 425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_193' data-name='Rectangle 193' width='40' height='40' rx='10' transform='translate(255 680)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-14' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(340 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_157' data-name='Rectangle 157' width='40' height='40' rx='10' transform='translate(340 425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_187' data-name='Rectangle 187' width='40' height='40' rx='10' transform='translate(340 680)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-15' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(425 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_158' data-name='Rectangle 158' width='40' height='40' rx='10' transform='translate(425 425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_188' data-name='Rectangle 188' width='40' height='40' rx='10' transform='translate(425 680)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-16' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(510 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_159' data-name='Rectangle 159' width='40' height='40' rx='10' transform='translate(510 425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_189' data-name='Rectangle 189' width='40' height='40' rx='10' transform='translate(510 680)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-17' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(595 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_160' data-name='Rectangle 160' width='40' height='40' rx='10' transform='translate(595 425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_190' data-name='Rectangle 190' width='40' height='40' rx='10' transform='translate(595 680)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-18' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(680 85)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_161' data-name='Rectangle 161' width='40' height='40' rx='10' transform='translate(680 425)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_191' data-name='Rectangle 191' width='40' height='40' rx='10' transform='translate(680 680)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-19' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(0 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-20' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(85 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_169' data-name='Rectangle 169' width='40' height='40' rx='10' transform='translate(85 510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-21' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(170 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_166' data-name='Rectangle 166' width='40' height='40' rx='10' transform='translate(170 510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-22' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(255 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_163' data-name='Rectangle 163' width='40' height='40' rx='10' transform='translate(255 510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_194' data-name='Rectangle 194' width='40' height='40' rx='10' transform='translate(255 765)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-23' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(340 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_155' data-name='Rectangle 155' width='40' height='40' rx='10' transform='translate(340 510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_192' data-name='Rectangle 192' width='40' height='40' rx='10' transform='translate(340 765)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_207' data-name='Rectangle 207' width='40' height='40' rx='10' transform='translate(340 850)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-24' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(425 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_151' data-name='Rectangle 151' width='40' height='40' rx='10' transform='translate(425 510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_185' data-name='Rectangle 185' width='40' height='40' rx='10' transform='translate(425 765)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_206' data-name='Rectangle 206' width='40' height='40' rx='10' transform='translate(425 850)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-25' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(510 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_152' data-name='Rectangle 152' width='40' height='40' rx='10' transform='translate(510 510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_186' data-name='Rectangle 186' width='40' height='40' rx='10' transform='translate(510 765)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_205' data-name='Rectangle 205' width='40' height='40' rx='10' transform='translate(510 850)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-26' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(595 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_148' data-name='Rectangle 148' width='40' height='40' rx='10' transform='translate(595 510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_184' data-name='Rectangle 184' width='40' height='40' rx='10' transform='translate(595 765)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_203' data-name='Rectangle 203' width='40' height='40' rx='10' transform='translate(595 850)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-27' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(680 170)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_149' data-name='Rectangle 149' width='40' height='40' rx='10' transform='translate(680 510)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_183' data-name='Rectangle 183' width='40' height='40' rx='10' transform='translate(680 765)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_204' data-name='Rectangle 204' width='40' height='40' rx='10' transform='translate(680 850)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-28' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(0 255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-29' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(85 255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-30' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(170 255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-31' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(255 255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-32' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(340 255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-33' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(425 255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-34' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(510 255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-35' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(595 255)' fill='rgba(5,14,30,0.81)'/><rect id='Rectangle_146-36' data-name='Rectangle 146' width='40' height='40' rx='10' transform='translate(680 255)' fill='rgba(5,14,30,0.81)'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain; */
 }
 
 .main-section h1{
@@ -305,6 +310,12 @@ img, .photo-container{
   border-radius: 10px;
   max-width: 100%;
   text-transform: capitalize;
+  filter: brightness(100%);
+  transition: filter .2s ease-in;
+}
+
+.btn:hover{
+  filter: brightness(70%);
 }
 
 
@@ -313,6 +324,7 @@ img, .photo-container{
 .header{
   background: linear-gradient(0deg,rgba(2,2,30,0),#02021e 98%);
   z-index: 999;
+  
 }
 
 .logo{
@@ -363,12 +375,7 @@ img, .photo-container{
 /* footer */
 .footer{
   position: relative;
-  padding: 5em 0;
-}
-
-.footer p{
-  font-weight: 700;
-  text-align: center;
+  padding: 8em 0;
 }
 
 /* main-section */
@@ -408,9 +415,19 @@ img, .photo-container{
 }
 
 .photo-container{
+  max-width: 682px;
   display: flex;
   flex-direction: column;
   background-color: var(--clr-primary-200);
+}
+
+.photo-container img{
+  filter: brightness(85%);
+  filter: drop-shadow(15px 15px 0px var(--clr-primary-200));
+}
+
+.svg-container svg{
+  max-width: 100%;
 }
 
 .photo-container h3{
@@ -467,9 +484,10 @@ img, .photo-container{
 
 /* Skills */
 
-.curriculum-section button{
-  margin-bottom: 7rem;
+.curriculum-section{
+  padding: 15rem 0;
 }
+
 
 .card{
   font-size: var(--fs-card-title);

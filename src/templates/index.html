@@ -2,12 +2,42 @@
 
 {% block title %}Home{% endblock %}
 
+{% block logo %}
+<a href="#main-section">
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.601 57">
+      <g id="Logo" transform="translate(0.101)">
+        <path id="Path_6" data-name="Path 6" d="M-5,0H26.6" transform="translate(7.399 54.5)" fill="none" stroke="#07f"
+          stroke-linecap="round" stroke-width="5" />
+        <line id="Line_2" data-name="Line 2" x2="33" transform="translate(44 54.5)" fill="none" stroke="#fa0"
+          stroke-linecap="round" stroke-width="5" />
+        <text id="TM" transform="translate(0 47)" fill="#f5f5f5" font-size="50" font-family="Gotham-Black, Gotham"
+          font-weight="800">
+          <tspan x="0" y="0">TM</tspan>
+        </text>
+      </g>
+    </svg>
+  </div>
+</a>
+</a>
+{% endblock %}
+
+{% block nav %}
+<nav class="navbar flex" id="menu">
+  <div class="m-auto flex gap-4 lg:gap-8">
+    <a class="nav__link" href="{{ url_for('about') }}">SOBRE</a>
+    <a class="nav__link" href="#jobs">TRABALHOS</a>
+    <a class="nav__link" href="{{ url_for('curriculum') }}">CURRÍCULO</a>
+  </div>
+</nav>
+{% endblock %}
+
 {% block main %}
-<section class="main-section">
+<section class="main-section" id="main-section">
   <div class="container">
     <p class="main-subtitle">Olá, sou <b> Gustavo Molina </p>
     <h1 class="section-title main-title">Desenvolvedor Fullstack</h1>
-    <button class="btn btn-custom">Vamos falar</button>
+    <a href="#about"><button class="btn btn-custom">Ver mais</button></a>
     <!--<div class="btn-desc">
       <span class="material-icons">
         arrow_upward
@@ -16,8 +46,8 @@
         de fale conosco)</p>
     </div>-->
     <div class="social">
-      <i class="fab fa-dribbble icon"></i>
-      <i class="fab fa-linkedin icon"></i>
+      <a href="https://dribbble.com/Foot-G"><i class="fab fa-dribbble icon"></i></a>
+      <a href="https://www.linkedin.com/in/gustavo-molina-054bb6215/"><i class="fab fa-linkedin icon"></i></a>
       <a href="https://github.com/TheMachineDev"><i class="fab fa-github icon"></i></a>
       <div class="line"></div>
     </div>
@@ -27,32 +57,33 @@
 <section class="about-section">
   <div class="section-bg"></div>
   <div class="container">
-    <div class="split items-center">
-      <div class="photo-container py-16 lg:py-48 mb-16 lg:mb-0">
-        <i class="fas fa-user-circle text-center icon"></i>
-        <h3 class="text-center">FOTO DE PERFIL</h3>
-        <p class="text-center">foto que terá efeitos de filtro e redimensionamento</p>
+    <div class="split items-center" id="about">
+      <div class="svg-container py-16 lg:py-48">
+        <svg xmlns="http://www.w3.org/2000/svg" width="674" height="auto" viewBox="0 0 674 681">
+          <rect id="Rectangle_65" data-name="Rectangle 65" width="397" height="385" rx="20" fill="#16499d" />
+          <rect id="Rectangle_307" data-name="Rectangle 307" width="432" height="450" rx="20"
+            transform="translate(242 231)" fill="#09337a" opacity="0.79" />
+        </svg>
       </div>
       <div class="flex-1">
         <p class="section-label">sobre mim</p>
         <h2 class="section-title">Amo criar interfaces bonitas</h1>
-          <p class="section-paragraph">Aqui conterá uma breve introdução sobre mim e sobre meus hobbies</p>
+          <p class="section-paragraph">Eu amo design, programação e jogos.</p>
           <a href="{{ url_for('about')}}"><button class="btn">Ver mais sobre</button></a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="job-section job__one">
+<section class="job-section job__one" id="jobs">
   <div class="container">
     <div class="split">
       <!-- lg:flex justify-between gap-12 -->
       <div>
         <p class="section-label">portfolio</p>
         <h2 class="section-title">Fatec SJC App</h2>
-        <p class="section-paragraph">Aqui terá uma breve descrição sobre os projetos que já fiz (ou terminarei, como o
-          API
-          desse Semestre)</p>
+        <p class="section-paragraph">App para a Fatec SJC feito durante o primeiro semestre do
+          curso de Desenvolvimento de Software Multiplataforma.</p>
       </div>
       <div class="">
         <div class="job-spec mt-7">
@@ -95,12 +126,9 @@
       <div class="flex-1">
         <p class="section-label">curriculo</p>
         <h2 class="section-title">Minhas habilidades</h2>
-        <p class="section-paragraph">Breve descrição sobre o as habilidades que possuo como desenvolvedor e uma página
-          com
-          mais detalhes e acesso ao
-          meu
-          currículo</p>
-        <a href="{{ url_for('curriculum')}}"><button class="btn">Veja meu currículo</button></a>
+        <p class="section-paragraph">Desenvolvedor fullstack e designer com foco em desenvolvimento de aplicações web.
+        </p>
+        <a href="{{ url_for('curriculum')}}"><button class="btn mb-28 lg:mb-0">Veja meu currículo</button></a>
       </div>
       <div class="flex-1 self-center">
         <div class="main-carousel" id="carousel" data-flickity='{ "wrapAround": true }'>
@@ -108,17 +136,17 @@
             <i class="fas fa-laptop-code card--icon"></i>
             <h3>Web Developer
             </h3>
-            <p>breve descrição sobre o que faço como desenvolvedor web</p>
+            <p>Criação de websites responsivos com frameworks como flask e react</p>
           </div>
           <div class="card carousel-cell">
             <i class="fas fa-layer-group card--icon"></i>
             <h3>Designer</h3>
-            <p>Breve descrição sobre o que faço como designer</p>
+            <p>Design de interface e prototipagem com o AdobeXD</p>
           </div>
           <div class="card carousel-cell">
             <i class="fas fa-server card--icon"></i>
             <h3>Back-end dev</h3>
-            <p>Breve descrição sobre o que faço como desenvovedor back-end</p>
+            <p>Criação de APIs backend com Node, Flask, PostgreSQL.</p>
           </div>
         </div>
       </div>
