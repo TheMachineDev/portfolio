@@ -69,11 +69,3 @@ pip install -r requirements.txt
 flask run
 ```
 - A aplicação estará rodando na url indicada pelo prompt de comando.
-
-
-## Demonstração do website:
-
-- Video do youtube (Entrega 1): **[Clique Aqui](https://youtu.be/bQM_nEK4sHw)**
-
-- Video do youtube (Entrega 2): **[Clique Aqui](https://youtu.be/iFodw-A0v_c)**
-
